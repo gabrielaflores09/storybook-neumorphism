@@ -14,12 +14,12 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const PrimaryButton = Template.bind({});
+PrimaryButton.args = {
   label: "Button Principal",
 };
 
-export const ButtonIcon = Template.bind({});
-ButtonIcon.args = {
+export const IconButton = Template.bind({});
+IconButton.args = {
   icon: BsFillPersonFill,
 };
