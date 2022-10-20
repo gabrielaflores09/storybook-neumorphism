@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Deploy App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Netlify: https://storybook-neumorphism-components.netlify.app
 
 ## Available Scripts
 
