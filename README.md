@@ -2,6 +2,8 @@
 
 Netlify: https://storybook-neumorphism-components.netlify.app
 
+![image](https://user-images.githubusercontent.com/37598870/197078789-4acb56af-aacd-4ff1-8e73-73c999dbb039.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
