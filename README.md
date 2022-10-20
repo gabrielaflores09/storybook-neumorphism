@@ -6,7 +6,6 @@ Netlify: https://storybook-neumorphism-components.netlify.app
 
 ## Tecnologías
 
-In the project directory, you can run:
 - ReactJS
 - Typescript
 - Storybook
