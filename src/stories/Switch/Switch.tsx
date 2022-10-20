@@ -1,22 +1,24 @@
 // External deps
-import React from "react";
+import React from 'react'
 
 // Internal deps
-import "./Switch.scss";
+import './Switch.scss'
 
 interface SwitchProps {
-  isChecked: boolean;
-  handleChange: React.ChangeEventHandler;
-  size: "small" | "medium" | "large";
+  isChecked: boolean
+  handleChange: React.ChangeEventHandler
+  size: 'small' | 'medium' | 'large'
+  className: string
 }
 
 const Switch = ({
   isChecked = false,
   handleChange,
-  size = "small",
+  size = 'small',
+  className = '',
 }: SwitchProps) => {
   return (
-    <div className="switch">
+    <div className={`switch ${className}`}>
       <input
         checked={isChecked}
         onChange={handleChange}
@@ -25,15 +27,15 @@ const Switch = ({
         type="checkbox"
       />
       <label
-        className={`switch-label ${size} ${isChecked ? "checked" : ""}`}
+        className={`switch-label ${size} ${isChecked ? 'checked' : ''}`}
         htmlFor="switch-comp"
       >
         <span
-          className={`switch-button ${size} ${isChecked ? "checked" : ""}`}
+          className={`switch-button ${size} ${isChecked ? 'checked' : ''}`}
         />
       </label>
     </div>
-  );
-};
+  )
+}
 
-export default Switch;
+export default Switch

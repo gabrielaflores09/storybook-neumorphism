@@ -1,27 +1,29 @@
-import React from "react";
-import "./Button.scss";
+import React from 'react'
+import './Button.scss'
 
 interface ButtonProps {
-  size?: "small" | "medium" | "large";
-  label: string;
-  icon: any;
-  borderRadius: string;
-  onClick?: () => void;
+  size?: 'small' | 'medium' | 'large'
+  label: string
+  icon: any
+  borderRadius: string
+  onClick?: () => void
+  className: string
 }
 
 export const Button = ({
-  size = "small",
+  size = 'small',
   label,
-  borderRadius = "65px",
+  borderRadius = '65px',
   icon: Icon,
+  className = '',
   ...props
 }: ButtonProps) => {
   return (
     <div
-      className={`button ${size}`}
+      className={`button ${size} ${className}`}
       {...props}
       style={{
-        borderRadius: borderRadius || "65px",
+        borderRadius: borderRadius || '65px',
       }}
     >
       {Icon && (
@@ -31,5 +33,5 @@ export const Button = ({
       )}
       {label && <span className="label">{label}</span>}
     </div>
-  );
-};
+  )
+}
