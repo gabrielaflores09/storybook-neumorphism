@@ -20,6 +20,7 @@ const Input = ({
   label,
   widthButton,
   hoverEffect,
+  placeholder,
 }: InputProps) => {
   return (
     <div className={`input ${className} ${size} ${hoverEffect ? 'hover' : ''}`}>
@@ -31,6 +32,7 @@ const Input = ({
         style={{
           width: widthButton || 'auto',
         }}
+        placeholder={placeholder}
       />
     </div>
   )

@@ -26,10 +26,10 @@
   input {
     border: none;
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    box-shadow: $primary-shadow;
+    padding: 0.6rem 1rem;
     color: $grey-color;
     font-family: $font-family;
+    box-shadow: $primary-shadow-inset;
 
     &.small {
       font-size: $small-fs;
@@ -42,7 +42,8 @@
     }
 
     &:focus {
-      box-shadow: $primary-shadow-inset;
+      box-shadow: $primary-shadow;
+
       outline: none;
     }
   }
