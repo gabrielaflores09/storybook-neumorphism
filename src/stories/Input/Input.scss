@@ -46,5 +46,9 @@
 
       outline: none;
     }
+
+    &::placeholder {
+      color: $grey-color-light;
+    }
   }
 }
