@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+.input {
+  display: inline-grid;
+  margin: 5px;
+  label {
+    color: $grey-color;
+    font-family: $font-family;
+    margin: 3px 0px;
+  }
+
+  &.hover {
+    :hover {
+      color: $primary-color;
+    }
+  }
+
+  &.small {
+    font-size: $small-fs;
+  }
+  &.medium {
+    font-size: $medium-fs;
+  }
+  &.large {
+    font-size: $large-fs;
+  }
+  input {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: $primary-shadow;
+    color: $grey-color;
+    font-family: $font-family;
+
+    &.small {
+      font-size: $small-fs;
+    }
+    &.medium {
+      font-size: $medium-fs;
+    }
+    &.large {
+      font-size: $large-fs;
+    }
+
+    &:focus {
+      box-shadow: $primary-shadow-inset;
+      outline: none;
+    }
+  }
+}
